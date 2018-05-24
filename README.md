@@ -7,19 +7,21 @@
 
 ## Forking a GitHub Repository
 
-Forking a GitHub repository is just a way to create your own copy of it. We do
-this all the time while using Learn. Every time you fork a lab, GitHub creates
-a copy that you can use as a sandbox to play around, all while maintaining a
-canonical repo where the original lab remains intact. In other words, forking
-creates another copy that allows you to work in your own world without messing
-with the core learn-co-students content.
+Forking a GitHub repository is just a way to create your own copy of it. For those 
+who have been using the in-browser Learn interface-- this is a common action that is
+taken. Each time you fork a lab, GitHub creates a copy that you can use as a 
+sandbox to play around in, while maintaining a canonical repo where the original lab/content
+remains intact. In other words, forking creates another copy that allows you to work in your 
+own world without messing with the core content.
 
 ![Fork Button](http://readme-pics.s3.amazonaws.com/fork_button.jpg)
 
+Outside of Learn, forking is a very commonn workflow for working with teams or
+working with or contributing to open sourced content in the Github community.
 You can fork any repo by clicking the "Fork" button at the top right of any
-GitHub repository. For labs and code alongs, Learn makes this process easy
-by allowing you to click the "OPEN IDE" button at the top of any lab (if you
-use the Learn IDE) or to simply type `learn open` in your terminal (if you use
+GitHub repository. For labs and code alongs, the Learn interface simplifies this
+process by allowing you to click the "OPEN IDE" button at the top of any lab (if 
+you use the Learn IDE) or to type `learn open` in your terminal (if you use
 a local development environment). In both cases, the GitHub repository will be
 automatically forked and cloned.
 
