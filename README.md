@@ -1,11 +1,22 @@
-# Forks and Clones
+# Forking and Cloning Github Repositories
+
+## Problem Statement
+
+It will be important to get used to forking and cloning repos. Both are `git` functions
+that allow a user to make copies of the repo, but can serve different functions, depending
+on what needs to be done. If you're working on a repository that you don't have "write"
+access to, such as Flatiron School's `github.com/learn-co-students/` repo, you may find
+yourself cloning a readme or lab to your local environment, but being unable to submit
+your changes with a `git push`. How are you able to keep track of your changes that are
+being added to a repo you're working on? This is where you would use `git fork` and make
+a clone of that instead!
 
 ## Objectives
 
-1. Fork a repo
-2. Clone a repo
+1. Use `git fork` to copy a repo
+2. Use `git clone` to save a repo to your local machine
 
-## Forking a GitHub Repository
+## Use `git fork` to Copy a Repo
 
 Forking a GitHub repository is just a way to create your own copy of it. For those 
 who have been using the in-browser Learn interface-- this is a common action that is
@@ -53,7 +64,7 @@ https://github.com/learn-co-students/forks-and-clones-readme-v-000
 
 [More on forking in the GitHub docs.](https://help.github.com/enterprise/2.2/user/articles/fork-a-repo/)
 
-## Cloning
+## Use `git clone` to Save a Repo to Your Local Machine
 
 Now we want to get our forked copy of the repository on our local machine. This
 is where cloning is useful. To do this:
@@ -79,12 +90,17 @@ like so:
 
 This will create a local copy of our forked GitHub repository. And that is it!
 
-Note that this is something you can do on _any_ public GitHub repository, not
-just Learn lessons.  So if you've found a GitHub repository that you'd love to
-build off of or modify for your own use, you can use this process to make your
-own copy.  Often, the original authors will include license information
-regarding how you can use their repository, so make sure to check before you
-publish, sell or distribute any material you've forked, cloned and modified.
+## Conclusion
+
+Github gives developers many ways to collaborate. Using `git fork` and `git clone` 
+in conjunction allow you to work independently and collaboratively on repos you 
+may not have direct access to edit. Note that this is something you can do on
+_any_ public GitHub repository, not just Learn lessons.  So if you've found
+a GitHub repository that you'd love to build off of or modify for your own use,
+you can use this process to make your own copy.  Often, the original authors
+will include license information regarding how you can use their repository,
+so make sure to check before you publish, sell or distribute any material
+you've forked, cloned and modified. 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/forks-and-clones-readme' title='Forks and Clones'>Forks and Clones</a> on Learn.co and start learning to code for free.</p>
 
