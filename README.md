@@ -2,39 +2,85 @@
 
 ## Problem Statement
 
-It will be important to get used to forking and cloning repos. Both are `git` functions
-that allow a user to make copies of the repo, but can serve different functions, depending
-on what needs to be done. If you're working on a repository that you don't have "write"
-access to, such as Flatiron School's `github.com/learn-co-students/` repo, you may find
-yourself cloning a readme or lab to your local environment, but being unable to submit
-your changes with a `git push`. How are you able to keep track of your changes that are
-being added to a repo you're working on? This is where you would use `git fork` and make
-a clone of that instead!
+If you are familiar with how to create local repositories, you have the ability to
+create a logged history of your project. What's great about open source is that lots
+of people are creating new repositories all the time and sharing their work. You can
+take your repository and push it to a remote to share it, or you can clone a repository
+to your local machine from a remote and make a copy on your own system. Due to permissions
+issues you might need to _fork_ a repository before you _clone_ it. How do you clone from
+a remote to your local system and how to do you fork when necessary?
 
 ## Objectives
 
-1. Use `git fork` to copy a repo
-2. Use `git clone` to save a repo to your local machine
+1. Define _remote_
+2. Use `git clone` to copy a repository to your local machine
+3. Use `git remote` to list remotes
+4. Use `git fork` via GitHub to duplicate other organization's repositories into your own
 
-## Use `git fork` to Copy a Repo
+## Define _remote_
 
-Forking a GitHub repository is just a way to create your own copy of it. For those 
-who have been using the in-browser Learn interface-- this is a common action that is
-taken. Each time you fork a lab, GitHub creates a copy that you can use as a 
-sandbox to play around in, while maintaining a canonical repo where the original lab/content
-remains intact. In other words, forking creates another copy that allows you to work in your 
-own world without messing with the core content.
+To work with or collaborate on any Git project, you need to be able to manage your _remote_
+repositories. Remote repositories are versions of your project that are hosted online, in this
+case, on Github. With these remote repositories, you'll be pushing and pulling data to and from
+them when you need to share work. To work with remotes, you'll get familiar with _fork_ and
+_clone_, and how they work hand-in-hand with each other, but have two separate meanings
+and functionality.
+
+## Use `git clone` to Copy a Repository to Your Local Machine
+
+Now we want to get our forked version of the repository on our local machine. This
+is where cloning is useful. To do this:
+
+1. Navigate back to the forked repository page you just created on GitHub.
+2. Click the "Clone or Download" green button on the right.
+2. Make sure you select `Use SSH` as your URL type.
+
+	![SSH URL](https://files.readme.io/UgsI2ndmR2aH5ky5G1OA_GitHub%20-%20SSH%20-%201.png)
+
+3. Click the "Copy to clipboard" button (highlighted below). This will copy the
+URL for us to use when we clone.
+
+	![Clone Repo Button](http://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
+
+4. In the terminal (accessed through the 'Sandbox' or Learn IDE), we need to
+run the `git clone` command. It takes the URL we just copied as an argument,
+like so:
+
+	```bash
+	git clone your-copied-github-url
+	```
+
+This will create a local copy of our forked GitHub repository. 
+
+## Use `git remote` to List Remotes
+
+With a repo cloned to your machine, you can now see which remote servers you have configured.
+With `git remote` you'll see the shortnames of each remote handle you’ve specified. If you’ve
+cloned your repository, you should at least see origin. Origin is the default name Git gives
+to the server you cloned from:
+
+	```bash
+	$ git remote
+	origin 
+	```
+
+## Use `git fork` via GitHub to Clone Other Organization's Repositories Into Your Own.
+
+Forking a GitHub repository is just a way to create a personal duplicate of it. When you fork
+a lab, GitHub creates a duplicate from the source organization's version of the repo to **your**
+duplicate of the repo. It's like saying "Hey, can I have the Louvre's version of _The Mona Lisa_?"
+The Louve would say no. But if you were to create an exact duplicate by _forking_ it from
+`louvre/mona_lisa` to `your-name/mona_lisa` the Louvre would be cut out of the, pardon
+the pun, picture. You could then copy *your* organization's version to *your* local machine
+with `git clone`.
+
 
 ![Fork Button](http://readme-pics.s3.amazonaws.com/fork_button.jpg)
 
-Outside of Learn, forking is a very commonn workflow for working with teams or
+Forking is a very common workflow for working with teams or
 working with or contributing to open sourced content in the Github community.
 You can fork any repo by clicking the "Fork" button at the top right of any
-GitHub repository. For labs and code alongs, the Learn interface simplifies this
-process by allowing you to click the "OPEN IDE" button at the top of any lab (if 
-you use the Learn IDE) or to type `learn open` in your terminal (if you use
-a local development environment). In both cases, the GitHub repository will be
-automatically forked and cloned.
+GitHub repository. 
 
 Instead of automating the process as we have been doing, for this lesson, we're
 going to manually fork and clone, so to get started, click the GitHub icon at
@@ -63,32 +109,6 @@ https://github.com/learn-co-students/forks-and-clones-readme-v-000
 ```
 
 [More on forking in the GitHub docs.](https://help.github.com/enterprise/2.2/user/articles/fork-a-repo/)
-
-## Use `git clone` to Save a Repo to Your Local Machine
-
-Now we want to get our forked copy of the repository on our local machine. This
-is where cloning is useful. To do this:
-
-1. Navigate back to the forked repository page you just created on GitHub.
-2. Click the "Clone or Download" green button on the right.
-2. Make sure you select `Use SSH` as your URL type.
-
-	![SSH URL](https://files.readme.io/UgsI2ndmR2aH5ky5G1OA_GitHub%20-%20SSH%20-%201.png)
-
-3. Click the "Copy to clipboard" button (highlighted below). This will copy the
-URL for us to use when we clone.
-
-	![Clone Repo Button](http://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
-
-4. In the terminal (accessed through the 'Sandbox' or Learn IDE), we need to
-run the `git clone` command. It takes the URL we just copied as an argument,
-like so:
-
-	```bash
-	git clone your-copied-github-url
-	```
-
-This will create a local copy of our forked GitHub repository. And that is it!
 
 ## Conclusion
 
