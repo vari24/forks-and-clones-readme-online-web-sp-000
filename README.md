@@ -1,4 +1,4 @@
-# Forking and Cloning Github Repositories
+# Forking and Cloning GitHub Repositories
 
 ## Problem Statement
 
@@ -20,7 +20,7 @@ from a remote to your local system and how to do you fork when necessary?
 
 To work with or collaborate on any Git project, you need to be able to manage your _remote_
 repositories. Remote repositories are versions of your project that are hosted online, in this
-case, on Github. This will keep a backup of your project, and allow you to be able to have
+case, on GitHub. This will keep a backup of your project, and allow you to be able to have
 easy access to make and retrieve data.
 
 ## Use `git clone` to Copy a Repository to Your Local Machine
