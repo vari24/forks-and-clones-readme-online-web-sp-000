@@ -6,9 +6,8 @@ If you are familiar with how to create local repositories, you have the ability 
 create a logged history of your project. What's great about open source is that lots
 of people are creating new repositories all the time and sharing their work. You can
 take your repository and push it to a remote to share it, or you can clone a repository
-to your local machine from a remote and make a copy on your own system. Due to permissions
-issues you might need to _fork_ a repository before you _clone_ it. How do you clone from
-a remote to your local system and how to do you fork when necessary?
+to your local machine from a remote and make a copy on your own system. How do you clone
+from a remote to your local system and how to do you fork when necessary?
 
 ## Objectives
 
@@ -21,17 +20,15 @@ a remote to your local system and how to do you fork when necessary?
 
 To work with or collaborate on any Git project, you need to be able to manage your _remote_
 repositories. Remote repositories are versions of your project that are hosted online, in this
-case, on Github. With these remote repositories, you'll be pushing and pulling data to and from
-them when you need to share work. To work with remotes, you'll get familiar with _fork_ and
-_clone_, and how they work hand-in-hand with each other, but have two separate meanings
-and functionality.
+case, on Github. This will keep a backup of your project, and allow you to be able to have
+easy access to make and retrieve data.
 
 ## Use `git clone` to Copy a Repository to Your Local Machine
 
-Now we want to get our forked version of the repository on our local machine. This
+Now we want to get a repository to our local machine. This
 is where cloning is useful. To do this:
 
-1. Navigate back to the forked repository page you just created on GitHub.
+1. Navigate back to the repository page you just created on GitHub.
 2. Click the "Clone or Download" green button on the right.
 2. Make sure you select `Use SSH` as your URL type.
 
@@ -48,6 +45,7 @@ like so:
 
 	```bash
 	git clone your-copied-github-url
+	cd your-copied-github-directory
 	```
 
 This will create a local copy of our forked GitHub repository. 
@@ -55,9 +53,9 @@ This will create a local copy of our forked GitHub repository.
 ## Use `git remote` to List Remotes
 
 With a repo cloned to your machine, you can now see which remote servers you have configured.
-With `git remote` you'll see the shortnames of each remote handle you’ve specified. If you’ve
-cloned your repository, you should at least see origin. Origin is the default name Git gives
-to the server you cloned from:
+From within the directory, you can use `git remote` you'll see each remote available. 
+If you’ve cloned your repository, you should at least see `origin`. `Origin` is the
+default name Git gives to the server you cloned from:
 
 	```bash
 	$ git remote
@@ -66,10 +64,10 @@ to the server you cloned from:
 
 ## Use `git fork` via GitHub to Clone Other Organization's Repositories Into Your Own.
 
-Forking a GitHub repository is just a way to create a personal duplicate of it. When you fork
-a lab, GitHub creates a duplicate from the source organization's version of the repo to **your**
-duplicate of the repo. It's like saying "Hey, can I have the Louvre's version of _The Mona Lisa_?"
-The Louve would say no. But if you were to create an exact duplicate by _forking_ it from
+Forking a GitHub repository is just a way to create a personal online duplicate of it. When you fork
+a lab, GitHub creates a duplicate from the source organization's online version of the repo to **your**
+local duplicate of the repo. It's like saying "Hey, can I have the Louvre's version of _The Mona Lisa_?"
+The Louve would say no. If you were to create an exact online duplicate by _forking_ it from
 `louvre/mona_lisa` to `your-name/mona_lisa` the Louvre would be cut out of the, pardon
 the pun, picture. You could then copy *your* organization's version to *your* local machine
 with `git clone`.
@@ -96,17 +94,8 @@ your copy of the repository.  If all has gone well, you will see your username
 at the top of the page, followed by a `/` and the name of the repository, along
 with a link just below to the original repository.
 
-For the lessons on learn.co, it's worthwhile to note that you can go back and
-forth between the original repo and your fork by changing your GitHub username
-within the GitHub URL to "learn-co-students". For example:
-
-```
-https://github.com/your-username-here/forks-and-clones-readme-v-000
-```
-Change to your-username-here to "learn-co-students":
-```
-https://github.com/learn-co-students/forks-and-clones-readme-v-000
-```
+For the lessons on learn.co, go back and forth between the original repo and 
+your fork by changing your GitHub username within the GitHub URL to "learn-co-students". 
 
 [More on forking in the GitHub docs.](https://help.github.com/enterprise/2.2/user/articles/fork-a-repo/)
 
