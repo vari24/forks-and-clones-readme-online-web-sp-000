@@ -27,7 +27,7 @@ Instead of automating the process as we have been doing, for this lesson, we're
 going to manually fork and clone, so to get started, click the GitHub icon at
 the top of this page:
 
-![github button](https://s3.amazonaws.com/flatiron-client-assets/assets/github-learn-button.png)
+![GitHub Octocat Icon](https://flatiron-client-assets.s3.amazonaws.com/assets/github-learn-button.png)
 
 This will bring you to the "learn-co-students" version of this lesson.  Click
 the 'Fork' button in the upper right corner of the page.  You will be prompted
